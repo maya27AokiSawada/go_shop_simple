@@ -1,0 +1,39 @@
+name: go_shop_simple  
+description: "シンプルな買い物リストアプリ"  
+
+# パッケージの公開を防ぐ設定（開発用）
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management - シンプル版
+  flutter_riverpod: ^2.3.6
+
+  # Local Storage - シンプル版  
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Material Design Icons
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linting - 基本のみ
+  lints: ^2.1.1
+
+flutter:
+  uses-material-design: true
+  
+  # アプリのアセット（必要に応じて追加）
+  # assets:
+  #   - images/
+  #   - docs/
